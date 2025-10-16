@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chatbot (Flask + Cal.com)</title>
+    <style>
+      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 2rem; }
+      #chat { max-width: 720px; margin: 0 auto; }
+      .msg { padding: .5rem; border-radius: 6px; margin: .25rem 0; }
+      .user { background: #e6f7ff; text-align: right }
+      .bot { background: #f0f0f0 }
+      #inputRow { display:flex; gap:.5rem; margin-top:1rem }
+      textarea { flex:1; min-height:48px }
+    </style>
+  </head>
+  <body>
+    <main id="chat">
+      <h1>Chatbot (Flask + Cal.com)</h1>
+      <div id="messages"></div>
+
+      <div id="inputRow">
+        <textarea id="message" placeholder="Say 'list', 'book', 'cancel <id>' or anything else..."></textarea>
+        <button id="send">Send</button>
+      </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
